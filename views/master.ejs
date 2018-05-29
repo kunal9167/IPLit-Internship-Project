@@ -1,0 +1,34 @@
+<% include ./partials/header %>
+
+<div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Master List</h1>
+            </div>
+        </div>
+        <table class="table table-hover">
+                <tr>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>MMC REGNO</th>
+                    <th>COLOR</th>
+                    <th>Remark</th>
+                </tr>
+                <% custs.forEach(function(cust){ %>
+                    <tr>
+                        <th><%= cust.name %></th>
+                        <th><%= cust.mobile %></th>
+                        <th><%= cust.email %></th>
+                        <th><%= cust.mmc %></th>
+                        <th><%= cust.color %></th>
+                        <th><%= cust.remark %></th>
+                    </tr>
+                <% }); %>
+        </table>  
+        <a href="/scan">Back</a>
+
+</div>
+      
+        
+<% include ./partials/footer %>

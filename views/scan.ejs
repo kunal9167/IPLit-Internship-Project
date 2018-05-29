@@ -1,0 +1,35 @@
+<% include ./partials/header %>
+
+<div class="container">
+        <div class="row">
+            <h1 style="text-align: center">Scan</h1>
+            <div style="width:30%; margin: 25px auto;">
+            <form action="/scan_list" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="info[mobile]" placeholder="Registration Number" autofocus>
+                </div>
+                <div class="form-group">
+                   
+                    <% try{if(msg){ %>
+                        <li><%= msg %></li>
+                        <% if(remark) %>
+                            <li style="color:red"><%= remark %></li>
+                        <% }}catch(e){ %>
+                        
+                       <% } %>        
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-default btn-block btn-primary">Submit!</button>
+                </div>
+                <div style="text-align: center; ">
+                <a href="/home" style="float: left;">Go Back</a>
+                <a href="/list" style="text-align: center;">All Successful scans</a> 
+                <a href="/reset" style="float:right;">Reset List</a>                
+            </div>          
+           </form>    
+        </div>
+    </div>
+</div>
+
+
+<% include ./partials/footer %>

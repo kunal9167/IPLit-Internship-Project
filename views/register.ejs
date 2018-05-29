@@ -1,0 +1,26 @@
+<% include ./partials/header %>
+<div class="container">
+        <div class="row">
+            <h1 style="text-align: center">Register Customer</h1>
+            <div style="width:30%; margin: 25px auto;">
+            <form action="/register" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="info[name]" placeholder="Name">
+                </div>
+                <div class="form-group">
+                      <input class="form-control" type="text" name="info[mobile]" placeholder="Mob Number">
+                </div>
+                <div class="form-group">
+                        <input class="form-control" type="text" name="info[email]" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-default btn-block btn-primary">Submit!</button>
+                </div>
+                <a href="/home">Go Back</a>
+            </form>
+    
+            
+            </div>
+        </div>
+    </div>
+<% include ./partials/footer %>

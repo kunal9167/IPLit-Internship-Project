@@ -1,0 +1,57 @@
+body{
+    background: linear-gradient( #0fb8ad 10%, #1fc8db 51%, #2cb5e8 75%);
+    background-repeat: no-repeat;
+    height: 100;
+    margin: 0;
+    min-height: 100vh; min-width: 100vw; background-color:#9B59B6;
+}
+
+.palign{
+    width: 50%;
+    padding-left: 2%;
+}
+
+.infobutton{
+    width: 30%;
+    margin: auto;
+} 
+
+.hbutton{
+    width: 30%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.btn-block{
+    margin: 10px auto;
+}
+
+div img{
+    width: 10%; 
+    height: 100%;
+    position: absolute;
+    margin-top: 5px;
+}
+
+.navbar-header img{
+    width: 50px;
+    height: 100%; 
+    position: absolute;
+    margin-top: 5px;
+}
+
+.navbar-text{
+    font-weight: 600;
+}
+
+nav{
+    background-color: #2cb5e8;
+}
+
+th{
+    color: black
+}
+
+a{
+    color:#060067;
+}

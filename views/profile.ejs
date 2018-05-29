@@ -1,0 +1,41 @@
+<% include ./partials/header %>
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Information</h1>
+        </div>
+    </div>
+    <form action="/profile" method="POST">
+        
+        <div class="form-group palign">
+            <h4>Name:</h4>
+            <input class="form-control" type="text" name="info[name]" value="<%=custs.name%>">
+        </div>
+        <div class="form-group palign">
+            <h4>Registration Number:</h4>
+            <p><%=custs.regno%></p>
+            <input type="hidden" name="info[regno]" value="<%=custs.regno%>">
+        </div>
+        <div class="form-group palign">
+            <h4>Mobile Number:</h4>
+            <input class="form-control" type="text" name="info[mobile]" value="<%=custs.mobile%>">
+        </div>
+        <div class="form-group palign">
+            <h4>EmailID:</h4>
+            <input class="form-control" type="text" name="info[email]" value="<%=custs.email%>">
+        </div>
+        <div class="form-group palign">
+            <h4>Address:</h4>
+            <textarea class="form-control" type="text" rows="4" name="info[address]"><%=custs.address%></textarea>
+        </div>
+        <button class="btn btn-lg btn-default btn-block btn-primary infobutton" type="submit">UPDATE</button>
+    </form>
+    <br>
+        <div >
+            <p class="infobutton">
+                    <a href="/scan" class="btn btn-lg btn-default btn-block btn-primary" style="margin-bottom: 20px">GO BACK</a>
+            </p>
+        </div>
+        
+    
